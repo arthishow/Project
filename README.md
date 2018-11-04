@@ -34,4 +34,4 @@ Also, in order to observe specific users and their influence, we will have to co
 
 # Questions for TAs
 
-*Do you think that natural language processing will be needed for data analysis ? 
+* Do you think that natural language processing will be needed for data analysis ? 
