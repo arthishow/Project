@@ -1,6 +1,8 @@
-# Title
+# The power of words: how to influence people
 
 # Abstract
+Using 10 years of Reddit comments history as well as 8 years-worth of Amazon reviews, this project aims to discover the underlying patterns that make a comment/review deemed good by other users what it is.
+
 A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
 
 # Research questions
