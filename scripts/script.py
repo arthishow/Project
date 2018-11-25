@@ -3,11 +3,13 @@ from pyspark.sql import *
 spark = SparkSession.builder.getOrCreate()
 
 DATASET_PATH = "hdfs:///datasets/reddit_data"
-PATH_2005 = DATASET_PATH + "/2005/RC_2005-12.bz2"
+PATH_2007 = DATASET_PATH + "/2007/RC_2007-12.bz2"
 
-print(PATH_2005)
-reddit = spark.read.json(PATH_2005) # open the file
+reddit = spark.read.json(PATH_2007)
 
 reddit.printSchema()
 
-reddit.write.format('json').save('/Users/arthishow/Desktop/reddit.json')
+reddit = reddit.filter(reddit["subreddit"] == "politics").filter(reddit['body'] != '[deleted]')
+reddit = reddit.select('author', 'body', 'created_utc', 'gilded', 'score', 'ups', 'downs', 'name')
+
+reddit.write.mode(SaveMode.Overwrite).format('json').save('sample_2007_12.json')
