@@ -1,49 +1,44 @@
 [Report link](https://www.overleaf.com/5613896445zbzcpyxbgbpj)
 
-# The power of words: how to influence people
+# Words and politics: how well r/politics mirrors the reality 
 
-# Abstract
+## Abstract
+The world is becoming increasingly connected in a time of technological advancements. Phenomena that contributed in revolutionising this field are social media platforms. Indeed, in introducing easy and fast communication through virtual space, populations all around the world can address news, opinions and many more, all while surfing through a platform of near infinite knowledge.  
 
-The world is becoming increasingly connected in a time of technological advancements. Phenomena that contributed in revolutionizing this field are social media platforms. Indeed, in introducing easy and fast communication through virtual space, populations all around the world can address news, opinions and many more, all while surfing through a platform of near infinite knowledge.
+In this project, we will concentrate on a social news and discussion website called *Reddit*. On this platform, users post comments containing content such as images, videos, text, and so on, which are then up or down voted by other users. Posts are organised by subjects into user-created boards called *subreddits*, which cover every imaginable topic.  
+This project aims at analysing one specific and major subreddit named *r/politics*.  
 
-In this project, we will concentrate on a social news and discussion website, Reddit. On this platform, members submit content such as images, text posts, etc, which are then voted up or down by other members. Posts are organized by subjects into user-created boards called "subreddits", which cover every imaginable topic. In gaining popularity in terms of votes (Reddit uses the term karma here), Reddit has been a platform for many to raise awareness for a number of causes ; members can now use one of the largest communities on the Internet for new and influential purposes.
+Focusing on a particular timespan covering the months of June 2016 to November 2016, i.e. the 6 months preceding the American election of 2016, it aims at discovering the underlying patterns that make a comment deemed good by other users and understand how they correlate with actual events. It also aims at understanding the population of this subreddit by analysing its political spectrum and see how closely it mirrors the outcome of the 2016 American election.
 
-Using specific periods of Reddit comments history and focusing on the "politics" subreddit, this project aims to discover the underlying patterns that make a comment/review deemed good by other users. More specifically, we will try to find a pattern that is recurrent in order to predict the score of a political review during the 3 latest American presidential elections, and develop a political profile of reddit.
 
-# Research questions
+## Research questions
+* **Are there any words that stand out as strong polarisers of opinions?**
+Looking at low/high-scoring comments, we aim to see if certain words come up regularly. Comparing word frequency distribution between low/high-scoring comments may give us clues to what topic, concept or politician generate the most controversy. 
 
-* Are there any words that stand out as strong polarizers of opinions ?
-We can see the posts with the highest or lowest score and find if they treat of the same thing, contain similar words.
+* **How did the popularity criteria for posts evolve through the years?**
+By observing the highest-scoring comments throughout the 6 months preceding the election, we intend to see how word distributions evolve and how they correlate with real events.
 
-* Are users with strong votes (karma) more likely to generate popular comments ? Are scores independent of previous ones ?
-This will be treated in user influence.
+* **How close to the final outcome of the American election an estimation can be made?**
+Through basic natural language processing, we plan to look for a correlation between the outcome of the American election nation-wise but also state-wise, and the overall polarity of comments (if it is positive, negative, or neutral) mentioning specific politicians.
 
-* How did the popularity criteria for posts evolve through the years ?  
-We will study the different patterns of the most popular politic comments throughout the three American elections, and see if it evolved throughout the years.
+* **How the popularity for each competing candidate evolve through the years?**
+Looking at the fluctuating overall polarity of comments throughout the 6 months preceding the election, we'd like to see if specific real events had impact on the popularity of each candidate.
 
-# Dataset
 
-We want to use the Reddit comments dataset from academictorrents.com. It has a size of 305GB compressed.
-The dataset consists of ~1.7 billion JSON objects complete with the comment, score, author, subreddit, position in comment tree and other fields that are available through Reddit's API.
+## Dataset
+The dataset used consists of 10 years of Reddit comments, from 2007 to 2017. It has a size of 305GB compressed ant contains about 1.7 billion JSON objects with the comment, score, author, subreddit, position in comment tree and other fields that are available through Reddit's API.  
+However, like pointed out earlier, the project only makes use of the comments found in the subreddit *r/politics* between June 2016 and November 2016. Using the cluster's computing power is necessary to retrieve this particular sub-dataset. Still, further queries on it should be possible locally in a reasonable time.
 
-We chose to work with the politics subreddit, more specifically just before the American presidential election period, i.e during October 2008, October 2012 and October 2016.
 
-# Description of the repository :
+## Description of the repository
+* *scripts* directory
+Contains the scripts used on the cluster to perform queries on the Reddit dataset.
+* Final project.ipynb
+Contains the whole pipeline of operations performed on the dataset, along technical explanations that cannot be found in the report.
 
-* report directory : will contain the final report project.
-* scripts directory : contains the scripts used on the cluster to perform queries on the data set.
-* Milestone 2.ipynb : contains data analysis and visualization for milestone 2.
 
-# Action plan and ideas for Milestone 3 :
-
-* Exploratory Data Analysis
-
-There seems to be a lot of data features not necessarily useful for our research, so we can use cross validation and backward selection to remove unnecessary features in our selected parts of the data, or see if there are other techniques that work faster. Moreover, we can create more features by using natural language processing on the "body" attribute corresponding to the comments.
-
-* Model selection :
-
-We will also need to do a model selection to choose the model that predicts best the score : we can compute the accuracy and the mean square error when applying a certain model to our data set and choose the best from various ones (Logistic regression, Decision trees, Random forest, ...). We can then also tune the hyper parameters of these models if they have ones for optimality.
-
-* User Influence :
-
-In order to observe specific users and their influence, we will have to compute their karma by aggregating their complete post history. As it'll probably be an expensive operation, we still have to see its viability.
+## Group members' contribution
+* Nourchene Ben Romdhane
+* Arnaud Hennig
+* Arthur Vernet
+Dataset retrieval on the cluster
