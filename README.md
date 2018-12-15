@@ -12,16 +12,16 @@ Focusing on a particular timespan covering the months of June 2016 to November 2
 
 
 ## Research questions
-* **Are there any words that stand out as strong polarisers of opinions?**
+* **Are there any words that stand out as strong polarisers of opinions?**  
 Looking at low/high-scoring comments, we aim to see if certain words come up regularly. Comparing word frequency distribution between low/high-scoring comments may give us clues to what topic, concept or politician generate the most controversy. 
 
-* **How did the popularity criteria for posts evolve through the years?**
+* **How did the popularity criteria for posts evolve through the years?**  
 By observing the highest-scoring comments throughout the 6 months preceding the election, we intend to see how word distributions evolve and how they correlate with real events.
 
-* **How close to the final outcome of the American election an estimation can be made?**
+* **How close to the final outcome of the American election an estimation can be made?**  
 Through basic natural language processing, we plan to look for a correlation between the outcome of the American election nation-wise but also state-wise, and the overall polarity of comments (if it is positive, negative, or neutral) mentioning specific politicians.
 
-* **How the popularity for each competing candidate evolve through the years?**
+* **How the popularity for each competing candidate evolve through the years?**  
 Looking at the fluctuating overall polarity of comments throughout the 6 months preceding the election, we'd like to see if specific real events had impact on the popularity of each candidate.
 
 
@@ -31,14 +31,14 @@ However, like pointed out earlier, the project only makes use of the comments fo
 
 
 ## Description of the repository
-* *scripts* directory
+* *scripts* directory  
 Contains the scripts used on the cluster to perform queries on the Reddit dataset.
-* Final project.ipynb
+* *Final project.ipynb*  
 Contains the whole pipeline of operations performed on the dataset, along technical explanations that cannot be found in the report.
 
 
 ## Group members' contribution
-* Nourchene Ben Romdhane
-* Arnaud Hennig
-* Arthur Vernet
+* **Nourchene Ben Romdhane**
+* **Arnaud Hennig**
+* **Arthur Vernet**  
 Dataset retrieval on the cluster
