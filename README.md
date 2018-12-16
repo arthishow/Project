@@ -1,7 +1,5 @@
 # Words and politics: how well does r/politics mirror the reality ?
 
-The project report is under the report folder.
-
 ## Abstract
 The world is becoming increasingly connected in a time of technological advancements. Phenomena that contributed in revolutionizing this field are social media platforms. Indeed, in introducing easy and fast communication through virtual space, populations all around the world can address news, opinions and many more, all while surfing through a platform of near infinite knowledge.  
 
@@ -31,6 +29,9 @@ However, as we pointed out earlier, the project only makes use of the comments f
 
 
 ## Description of the repository
+* *report* directory  
+Conatins the report (pdf and tex format) as well as the images used to produce it.
+
 * *scripts* directory  
 Contains the scripts used on the cluster to perform queries on the Reddit dataset.
 
