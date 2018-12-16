@@ -1,6 +1,6 @@
-[Report link](https://www.overleaf.com/5613896445zbzcpyxbgbpj)
-
 # Words and politics: how well does r/politics mirror the reality ?
+
+The project report is under the report folder.
 
 ## Abstract
 The world is becoming increasingly connected in a time of technological advancements. Phenomena that contributed in revolutionizing this field are social media platforms. Indeed, in introducing easy and fast communication through virtual space, populations all around the world can address news, opinions and many more, all while surfing through a platform of near infinite knowledge.  
