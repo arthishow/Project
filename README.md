@@ -48,6 +48,10 @@ A .csv file containing the different results of the 2016 United States president
 
 ## Group members' contribution
 * **Nourchene Ben Romdhane**
+Data processing, Prediction maps generation, Notebook organization.
+
 * **Arnaud Hennig**
+Report, Data Processing, Data analysis.
+
 * **Arthur Vernet**  
-Dataset retrieval on the cluster
+Dataset retrieval on the cluster, Report, Data cleaning, Data processing, Evolution of the sentiment towards candidates.
